@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Dancing+Script:wght@400;500;700&family=Josefin+Slab:wght@500&family=Lato:wght@100;300&family=Playball&family=Poppins:ital@0;1&family=Redressed&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* .container{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    border: 1px solid;
+} */
+ul{
+    display: flex;
+    width: 390px;
+    position: relative;
+    top: 530px;
+    margin: 0;
+    background-color: #eaeaea;
+    font-family: arial;
+    font-size: 14px;
+    opacity: 0.8;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+.navigation.active{
+    transform: translate(-120px, 0);
+}
+ul li{
+    list-style: none;
+    text-align: center;
+    transform: translate(40px, 0);
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 13px;
+    display: block;
+}
+ul li a:hover{
+    color:salmon;
+}
+.hide{
+    visibility: hidden;
+}
+.hiden{
+    visibility: hidden;
+}
+.toggle {
+    position: absolute;
+    left: 358px;
+    top: 531px;
+    width: 33px;
+    height: 40px;
+}
+.toggle::before{
+    content: '\f0da';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.toggle.active::before{
+    content: '\f0d9';
+    position: absolute;
+    left: -358px;
+}
+.hide.active{
+    visibility: visible;
+}
+.hiden.active{
+    visibility: visible;
+}
+.show.active{
+    visibility: hidden;
+}
+
+/* penerima */
+.box{
+    /* margin-left: 50%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    display: flex;
+    border: 1px solid black;
+}
+.back{
+    position: absolute;
+    opacity: 0.4;
+    width: 390px;
+    border: 1px solid black;
+}
+.frame{
+    margin-left: auto;
+    margin-right: auto;
+}
+.frame img{
+    position: absolute;
+    width: 200px;
+    top: 120px;
+    left: 80px;
+}
+.inisial{
+    position: absolute;
+    top: 185px;
+    left: 140px;
+    font-family: 'Cormorant Garamond', serif;
+    color: goldenrod;
+    font-size: 50px;
+}
+.yth{
+    position: absolute;
+    top: 330px;
+    left: 169px;
+    font-size: 18px;
+    color: goldenrod;
+}
+.nama{
+    position: absolute;
+    text-align: center;
+    width: 390px;
+    top: 375px;
+    font-size: 20px;
+    color: goldenrod;
+}
+.garis img{
+    position: absolute;
+    margin-top: 290px;
+    text-align: center;
+}
+.tempat{
+    position: absolute;
+    width: 390px;
+    top: 430px;
+    left: 140px;
+    color: goldenrod;
+}
+
+/* sampul */
+.bungasampul{
+    position: absolute;
+    width: 370px;
+    left: 0;
+    top: 85px;
+}
+.weddingsampul{
+    position: absolute;
+    width: 150px;
+    left: 138px;
+    top: 220px;
+    font-family: 'Redressed', serif;
+    font-size: 20px;
+}
+.namasampul{
+    position: absolute;
+    width: 390px;
+    text-align: center;
+    top: 242px;
+    font-size: 48px;
+    font-family: 'Playball', serif;
+    color: firebrick;
+}
+.tanggalsampul{
+    position: absolute;
+    width: 390px;
+    left: 145px;
+    top: 300px;
+    font-family: 'lato', serif;
+    font-size: 15px;
+}
+
+
+/* mempelai */
+.box-content1{
+    position: absolute;
+    width: 350px;
+    top: 10px;
+    left: 10px;
+    background: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.4;
+}
+.box-content{
+    position: absolute;
+    width: 340px;
+    height: 480px;
+    top: 50px;
+    left: 25px;
+    box-shadow: 5px 4px 4px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+.assalamualaikum{
+    position: absolute;
+    width: 320px;
+    top: 60px;
+    left: 10px;
+    font-size: 12px;
+}
+.mahasuci{
+    position: absolute;
+    top: 80px;
+}
+.mahasuci p {
+    font-size: 15px;
+}
+.top-l{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+}
+.top-r{
+    position: absolute;
+    width: 190px;
+    left: 199px;
+}
+.bismillah{
+    width: 70%;
+}
+.putri{
+    position: absolute;
+    width: 300px;
+    top: 170px;
+    left: 20px;
+    font-family: 'Playball', 'Poppins', serif;
+    font-size: 35px;
+    color: goldenrod;
+}
+.font-putri{
+    font-family: 'Redressed', 'Poppins', serif;
+}
+.lineputri{
+    position: absolute;
+    width: 210px;
+    top: 215px;
+    left: 65px;
+}
+.anak-wanita{
+    position: absolute;
+    width: 200px;
+    top: 230px;
+    left: 68px;
+    font-size: 15px;
+    line-height: 1px;
+}
+.and{
+    position: absolute;
+    width: 100px;
+    top: 270px;
+    left: 120px;
+    font-size: 40px;
+    font-family: 'Dancing Script', 'Poppins', serif;
+    color: salmon;
+
+}
+.putra{
+    position: absolute;
+    font-size: 35px;
+    top: 315px;
+    left: 85px;
+    font-family: 'Playball';
+    color: goldenrod;
+}
+.line-putra{
+    position: relative;
+    width: 210px;
+    top: 317px;
+}
+.font-putra{
+    font-family: 'Redressed';
+}
+.anak-laki p{
+    position: relative;
+    top: 315px;
+    line-height: 1px;
+    font-size: 15px;
+}
+.bottom-r{
+    position: absolute;
+    width: 100px;
+    top: 470px;
+    left: 290px;
+}
+.bottom-l{
+    position: absolute;
+    width: 190px;
+    top: 350px;
+}
+
+/* Acara */
+.acara{
+    font-family: 'Redressed', serif;
+    font-size: 30px;
+    margin-top: -20px;
+}
+.grkiri{
+    width: 80px;
+    height: 1px;
+}
+.grkanan{
+    width: 80px;
+    height: 1px;
+}
+.akad{
+    /* position: absolute; */
+    font-family: 'Playball', serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: goldenrod;
+}
+.hariakad{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 58px;
+    top: 90px;
+}
+.jamakad{
+    position: absolute;
+    left: 55px;
+    top: 116px;
+}
+.boxtgl1{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    border-radius: 100%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+    font-family: 'Lato';
+    position: absolute;
+    left: 135px;
+    top: 70px;
+}
+.bulanakad{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 220px;
+    top: 90px;
+}
+.tahunakad{
+    position: absolute;
+    left: 217px;
+    top: 116px;
+}
+.tglakad p {
+    position: absolute;
+    top: 170px;
+    left: 84px;
+    font-size: 17px;
+    font-family: 'Redressed';
+}
+.resepsi{
+    /* position: absolute; */
+    margin-top: 140px;
+    font-family: 'Playball', serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: goldenrod;
+}
+.garisR{
+    width: 103px;
+    height: 1px;   
+}
+.hariresepsi{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 58px;
+    top: 268px;
+}
+.jamresepsi{
+    position: absolute;
+    left: 3px;
+    top: 295px;
+    font-size: 14px;
+}
+.boxtgl2{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    border-radius: 100%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+    font-family: 'Lato';
+    position: absolute;
+    left: 135px;
+    top: 250px;
+}
+.bulanresepsi{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 220px;
+    top: 269px;
+}
+.tahunresepsi{
+    position: absolute;
+    left: 220px;
+    top: 293px;
+}
+.tglakad p {
+    position: absolute;
+    top: 170px;
+    left: 84px;
+    font-size: 17px;
+    font-family: 'Redressed';
+}
+.tglresepsi p{
+    font-family: 'Redressed';
+    margin-top: 100px;
+    font-size: 17px;
+}
+
+/* protokol */
+.pencegahan{
+    font-size: 12px;
+    margin-top: -23px;
+    margin-left: -5px;
+    width: 350px;
+}
+.masker img{
+    width: 65px;
+    position: absolute;
+    left: 10px;
+}
+.masker p{
+    font-size: 12px;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+}
+.suhu img{
+    width: 65px;
+    position: absolute;
+    left: 270px;
+    top: 170px;
+}
+.suhu p{
+    font-size: 12px;
+    width: 160px;
+    position: absolute;
+    top: 185px;
+    left: 120px;
+}
+.jarak img{
+    width: 65px;
+    position: absolute;
+    top: 240px;
+    left: 10px;
+}
+.jarak p{
+    font-size: 12px;
+    position: absolute;
+    width: 190px;
+    top: 260px;
+    left: 83px;
+    text-align: left;
+}
+.cucitangan img{
+    width: 65px;
+    position: absolute;
+    top: 320px;
+    left: 270px;
+}
+.cucitangan p{
+    font-size: 12px;
+    position: absolute;
+    top: 330px;
+    left: 15px;
+    width: 260px;
+}
+.tamu{
+    margin-top: 325px;
+    font-size: 12px;
+}
+
+/* peta */
+.petaLokasi{
+    font-family: 'Redressed';
+    font-size: 30px;
+    margin-top: -10px;
+}
+.peta img{
+    display: block;
+    margin-left: 120px;
+    width: 100px;
+    height: 1px;
+}
+.peta p {
+    font-size: 11px;
+    display: inline-block;
+}
+.penutup p{
+    font-size: 11px;
+    width: 330px;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+.teks {
+    font-family: 'Playball';
+    color: goldenrod;
+    font-size: 30px;
+    margin-top: -15px;
+}
